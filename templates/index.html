@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{%static 'img/logo.svg'%}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <title>НА УГЛЯХ</title>
+</head>
+<body>
+    <header class="header meal-menu">
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <img src="{%static 'img/logo.svg'%}" alt="logo">
+                <h2>Кафе бар</h2>
+                <h1>НА УГЛЯХ</h1>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="btn-box">
+            <button class="btn btn_menu">Меню</button>
+            <button class="btn btn_bar">Бар</button>
+        </div>
+        <div class="menu-categories">
+            <div class="menu-categories_card"><a href="#Салаты">Салаты</a></div>
+            <div class="menu-categories_card"><a href="#Супы">Супы</a></div>
+            <div class="menu-categories_card"><a href="#ВторыеБлюда">Вторые блюда</a></div>
+            <div class="menu-categories_card"><a href="#Закуска">Закуски</a></div>
+            <div class="menu-categories_card"><a href="#Гарниры">Гарниры</a></div>
+            <div class="menu-categories_card"><a href="#Шашлык">Шашлык</a></div>
+            <div class="menu-categories_card"><a href="#Пицца">Пицца</a></div>
+            <div class="menu-categories_card"><a href="#Мучное">Мучное</a></div>
+            <div class="menu-categories_card"><a href="#Десерты">Десерт</a></div>
+            <div class="menu-categories_card"><a href="#Чай">Чай</a></div>
+            <div class="menu-categories_card"><a href="#ХолодныеНапитки">Холодные напитки</a></div>
+        </div>
+        <div class="bar-categories">    
+            <div class="bar-categories_card"><a href="#Лимонады"><p>Лимонады</p></a></div>
+            <div class="bar-categories_card"><a href="#МолочныеКоктели"><p>Молочные<br>коктели</p></a></div>
+            <div class="bar-categories_card"><a href="#Виски">Виски</a></div>
+            <div class="bar-categories_card"><a href="#РазливноеПиво"><p>Разливное<br>пиво</p></a></div>
+            <div class="bar-categories_card"><a href="#БутылочноеПива"><p>Бутылочное<br>пиво</p></a></div>
+            <div class="bar-categories_card"><a href="#Закуски">Закуски</a></div>
+            <div class="bar-categories_card"><a href="#Ликеры">Ликеры</a></div>
+            <div class="bar-categories_card"><a href="#Вино">Вино</a></div>
+            <div class="bar-categories_card"><a href="#Коньяк">Коньяк</a></div>
+            <div class="bar-categories_card"><a href="#Водка">Водка</a></div>
+            <div class="bar-categories_card"><a href="#Текилы">Текила</a></div>
+            <div class="bar-categories_card"><a href="#Ром">Ром</a></div>
+        </div>
+    </section>
+    <section class="food-menu">
+        {%for type in Type_menu%}
+        <div class="salads-con">
+
+            <div class="food-menu_title" id='{{type|title|cut:" "}}'>
+                <div class="line"></div>
+                <h2>{{type}}</h2>
+                <div class="line"></div>
+            </div>
+            {%if type == 'Салаты' %}
+                <div class="bg-salad"></div>
+            {%endif%}
+            {%if type == 'Супы' %}
+                <div class="bg-soup"></div>
+            {%endif%}
+            {%if type == 'Вторые блюда ' %}
+                <div class="bg-second-meal"></div>
+            {%endif%}
+            {%if type == 'Шашлык' %}
+                <div class="bg-shashlyk"></div>
+            {%endif%}
+            {%if type == 'Пицца' %}
+                <div class="bg-pizza"></div>
+            {%endif%}
+            {%if type == 'Десерты' %}
+                <div class="bg-dessert"></div>
+            {%endif%}
+            {%if type == 'Чай' %}
+                <div class="bg-tea"></div>
+            {%endif%}
+            <div class="food-menu_name-price">
+                <ul>
+                    {%for food in Menu%}
+                         {%if food.types == type %}
+                            <li>{{food.Food_name}}<span>{{food.Food_price}}с</span></li>
+                          {%endif%}
+                    {%endfor%}
+                </ul>
+            </div>
+            
+        </div>{%endfor%}
+    </section>
+    <section class="bar-menu">
+        {%for type in Type_bar%}
+        <div class="bar-menu_title" id='{{type|title|cut:" "}}'>
+            <div class="line"></div>
+            <h2>{{type}}</h2>
+            <div class="line"></div>
+        </div>
+        <div class="bar-menu_name-price">
+            <ul>
+                {%for food in Bar%}
+                    {%if food.types == type %}
+                    <li>{{food.Food_name}}<span>{{food.Food_price}}с</span></li>
+                    {%endif%}
+                {%endfor%}
+            </ul>
+        </div>
+        {%endfor%}
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="{%static 'img/chevron-circle-up-solid.svg' %}" alt="top icon"></button>
+    C3admin
+    <script src="{%static 'script.js' %}"></script>
+</body>
+</html>

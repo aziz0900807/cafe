@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Hammersmith+One&family=Source+Serif+4:opsz@8..60&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1D1D1D;
+}
+
+.header{
+    height: 100vh;
+    border-radius: 0px 0px 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.meal-menu{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/header_img.png');
+}
+
+.header-bar_menu{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bar_menu .header_wrapper{
+    justify-content: center;
+}
+
+.header_wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header_logo{
+    width: 442px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_logo img{
+    width: 59%;
+    height: 129px;
+}
+
+.header_logo h2{
+    color:  #FFFBFB;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.header_logo h1{
+    color: #FFFBFB;
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'Source Serif 4', serif;
+}
+/* menu */
+
+.btn-box{
+    margin: auto;
+    margin-top: 78px;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 35%;
+    height: 78px;
+    color: #FFF;
+    background-color: #1D1D1D;
+    font-family: 'Caveat', cursive;
+    font-size: 6em;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_menu{
+    border: 3px solid rgba(214, 94, 27, 0.50);
+}
+
+.btn_bar{
+    border: 3px solid #6100FF;
+}
+
+.menu-categories{
+    margin-top: 126px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    row-gap: 80px;
+    column-gap: 60px;
+}
+
+.menu-categories_card{
+    width: 279px;
+    height: 310px;
+    border: 2px solid rgba(214, 94, 27, 0.50);
+    font-family: 'Caveat', cursive;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 94%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu-categories_card a{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bar-categories_card a{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-categories_card:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img//menu-img/salads.png');
+}
+
+.menu-categories_card:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/soups.png');
+}
+
+.menu-categories_card:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/second-meal.png');
+}
+
+.menu-categories_card:nth-child(4){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/zakuski.png');
+}
+
+.menu-categories_card:nth-child(5){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/garnires.png');
+}
+
+.menu-categories_card:nth-child(6){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/shashlyks.png');
+}
+
+.menu-categories_card:nth-child(7){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/pizzas.png');
+}
+
+.menu-categories_card:nth-child(8){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/flour.png');
+}
+
+.menu-categories_card:nth-child(9){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/desserts.png');
+}
+
+.menu-categories_card:nth-child(10){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/tea.png');
+}
+
+.menu-categories_card:nth-child(11){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/menu-img/cold-drinks.png');
+}
+
+
+.bar-categories{
+    margin-top: 126px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center; 
+    row-gap: 80px;
+    column-gap: 60px;
+}
+
+.bar-categories_card{
+    width: 279px;
+    height: 310px;
+    border: 2px solid #6100FF;
+    font-family: 'Caveat', cursive;
+    color: aliceblue;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 94%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bar-categories_card p{
+    font-size: 60px;
+}
+
+.bar-categories_card:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/lemonades.png');
+}
+.bar-categories_card:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/milk-coctaile.png');
+}
+.bar-categories_card:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/wiskey.png');
+}
+.bar-categories_card:nth-child(4){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/beer.png');
+}
+.bar-categories_card:nth-child(5){  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/bottle_beer.png');
+}
+.bar-categories_card:nth-child(6){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/zakuski.png');
+}
+.bar-categories_card:nth-child(7){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/liquor.png');
+}
+.bar-categories_card:nth-child(8){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/vine.png');
+}
+.bar-categories_card:nth-child(9){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/cognac.png');
+}
+.bar-categories_card:nth-child(10){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/vodka.png');
+}
+.bar-categories_card:nth-child(11){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/tequila.png');
+}
+.bar-categories_card:nth-child(12){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url('../img/bar-img/rom.png');
+}
+
+
+/* menu */
+
+.food-menu{
+    margin-top: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-menu{
+    margin-top: 182px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-menu_title, .bar-menu_title{
+    width: 90%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.food-menu_title .line{
+    width: 30%;
+    height: 7px;
+    background: rgba(214, 94, 27, 0.50);
+}
+
+.food-menu_title h2, .bar-menu_title h2{
+    color: #FFF;
+    font-family: 'Caveat', cursive;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.food-menu_name-price, .bar-menu_name-price{
+    width: 90%;
+    display: flex;
+    justify-content: start;
+}
+
+.food-menu_name-price ul, .bar-menu_name-price ul{
+    width: 90%;
+}
+
+.food-menu_name-price ul li, .bar-menu_name-price ul li{
+    color: #FFF;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-menu_name-price ul li span{
+    color: #1B8500;
+}
+
+.bar-menu_title .line{
+    width: 30%;
+    height: 7px;
+    background: #545BFF;
+}
+
+.bar-menu_name-price ul li span{
+    color: #545BFF;
+}
+
+
+.salads-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-salad{
+    position: absolute;
+    right: 0;  
+    top: 20%;
+    width: 400px;
+    height: 700px;
+    background-image: url('../img/menu-bg-img/salad.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.soups-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-soup{
+    position: absolute;
+    left: 0;   
+    top: 20%;
+    width: 500px;
+    height: 700px;
+    background-image: url('../img/menu-bg-img/soup.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.second-meal-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-second-meal{
+    position: absolute;
+    right: 0;   
+    top: 20%;
+    width: 600px;
+    height: 500px;
+    background-image: url('../img/menu-bg-img/fish.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.shashlyk-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-shashlyk{
+    position: absolute;
+    left: 25%;   
+    top: 40%;
+    width: 600px;
+    height: 500px;
+    background-image: url('../img/menu-bg-img/shashlyk3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.pizza-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-pizza{
+    position: absolute;
+    left: 0;  
+    top: 40%;
+    width: 800px;
+    height: 800px;
+    background-image: url('../img/menu-bg-img/pizza.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.dessert-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-dessert{
+    position: absolute;
+    left: 30%;  
+    top: 40%;
+    width: 600px;
+    height: 600px;
+    background-image: url('../img/menu-bg-img/ice-cream.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+.tea-con{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-tea{
+    position: absolute;
+    right: 0;  
+    top: 40%;
+    width: 600px;
+    height: 600px;
+    background-image: url('../img/menu-bg-img/tea.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+#myBtn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(214, 94, 27, 0.50);
+}
+
+#myBtn img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 920px) {
+    .header{
+        background-position: 60%;
+    }
+
+
+    .header_wrapper{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_logo{
+        height: 300px;
+    }
+
+    .header_logo h1{
+        font-size: 80px;
+    }
+
+    .btn{
+        font-size: 4em;
+    }
+
+    .menu-categories, .bar-categories{
+        margin-top: 50px;
+    }
+
+    .btn-box{
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .menu-categories_card, .bar-categories_card{
+        width: 249px;
+        height: 280px;
+    }
+
+    .bar-categories_card p{
+        font-size: 50px;
+    }
+
+    .food-menu_title .line, .bar-menu_title .line{
+        width: 23%;
+        height: 5px;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-bottom: 120px;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 60px; 
+    }
+
+    .food-menu, .bar-menu{
+        margin-top: 20px;
+    }
+
+    .bg-salad{
+        width: 300px;
+        height: 500px;
+    }
+
+    .bg-soup{
+        width: 350px;
+        height: 500px;
+    }
+
+    .bg-second-meal{
+        width: 500px;
+        height: 400px;
+    }
+
+    .bg-shashlyk{
+        left: 5%;   
+        top: 30%;
+        width: 500px;
+        height: 400px;
+    }
+
+    .bg-pizza{
+        position: absolute;
+        left: 0;  
+        top: 40%;
+        width: 650px;
+        height: 650px;
+    }
+
+    .bg-dessert{
+        width: 450px;
+        height: 450px;
+    }
+
+    .bg-tea{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .food-menu_title .line, .bar-menu_title .line{
+        width: 20%;
+    }
+
+    .food-menu_title h2, .bar-menu_title h2{
+        font-size: 80px;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-bottom: 90px;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 55px; 
+    }
+
+    .food-menu, .bar-menu{
+        margin-top: 10px;
+    }
+
+    .bg-salad{
+        width: 300px;
+        height: 400px;
+        top: 30%;
+    }
+
+    .bg-soup{
+        width: 300px;
+        height: 400px;
+        top: 30%;
+    }
+
+    .bg-second-meal{
+        top: 40%;
+        width: 350px;
+        height: 250px;
+    }
+
+    .bg-shashlyk{
+        left: 0;   
+        top: 80%;
+        width: 350px;
+        height: 300px;
+    }
+
+    .bg-pizza{
+        position: absolute;
+        left: 0;  
+        top: 40%;
+        width: 500px;
+        height: 500px;
+    }
+
+    .bg-dessert{
+        width: 400px;
+        height: 400px;
+    }
+
+    .bg-tea{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 570px) {
+    .header_logo h1{
+        font-size: 60px;
+    }
+
+    .btn-box{
+        width: 80%;
+    }
+
+    .btn{
+        width: 30%;
+        height: 70px;
+        font-size: 3em;
+    }
+    .menu-categories_card, .bar-categories_card{
+        width: 180px;
+        height: 200px;
+        font-size: 50px;
+    }
+
+    .bar-categories_card p{
+        font-size: 40px;
+    }
+
+    .food-menu_title h2, .bar-menu_title h2{
+        font-size: 70px;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-bottom: 75px;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 50px; 
+    }
+
+    .bg-pizza{
+        width: 400px;
+        height: 400px;
+    }
+
+    .bg-dessert{
+        width: 380px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header{
+        width: 100%;
+        height: 300px;
+    }
+
+    .header_wrapper{
+        display: flex;
+        justify-content: end;
+    }
+
+    .header_logo{
+        width: 134px;
+        height: 110px;
+    }
+
+    .header_logo img{
+        width: 95%;
+        height: 49%;
+    }
+
+    .header_logo h1{
+        font-size: 20px;
+    }
+
+    .header_logo h2{
+        font-size: 15px;
+    }
+
+    .header_wrapper{
+        width: 50%;
+    }
+
+    .btn{
+        width: 45%;
+        height: 50px;
+        font-size: 2.5em;
+    }
+
+    .menu-categories_card, .bar-categories_card{
+        width: 140px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .menu-categories, .bar-categories{
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .bar-categories_card p{
+        font-size: 30px;
+    }
+
+    .food-menu_title h2, .bar-menu_title h2{
+        font-size: 50px;
+    }
+
+    .food-menu_title .line, .bar-menu_title .line{
+        width: 22%;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-bottom: 40px;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 40px; 
+    }
+
+    .food-menu, .bar-menu{
+        margin-top: 40px;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-top: 50px;
+    }
+
+    .bg-soup{
+        width: 200px;
+        height: 300px;
+        top: 30%;
+    }
+
+    .bg-second-meal{
+        width: 280px;
+        height: 200px;
+        top: 30%;
+    }
+
+    .bg-shashlyk{
+        left: 0;   
+        top: 20%;
+        width: 250px;
+        height: 200px;
+    }
+
+
+    .bg-pizza{
+        width: 300px;
+        height: 300px;
+    }
+
+    .bg-dessert{
+        left: 0;
+        width: 330px;
+        height: 370px;
+    }
+
+    .bg-tea{
+        width: 350px;
+        height: 350px;
+    }
+
+    #myBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .food-menu_title, .bar-menu_title{
+        margin-bottom: 30px;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 3.3rem; 
+    }
+
+    .food-menu, .bar-menu{
+        margin-top: 30px;
+    }
+
+    .food-menu_title, .bar-menu_title{
+        margin-top: 30px;
+    }
+    .bg-salad{
+        width: 250px;
+        height: 350px;
+    }
+
+    .bg-shashlyk{
+        left: 0;   
+        top: 40%;
+        width: 220px;
+        height: 180px;
+    }
+
+    .bg-dessert{
+        width: 300px;
+        height: 330px;
+    }
+
+    .bg-tea{
+        width: 320px;
+        height: 320px;
+    }
+    #myBtn {
+        width: 35px;
+        height: 35px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn{
+        font-size: 30px;
+    }
+
+    .menu-categories_card, .bar-categories_card{
+        width: 130px;
+        height: 140px;
+        font-size: 35px;
+    }
+
+    .bar-categories_card p{
+        font-size: 27px;
+    }
+
+    .food-menu_title h2, .bar-menu_title h2{
+        font-size: 40px;
+    }
+
+    .food-menu_title .line, .bar-menu_title .line{
+        width: 23%;
+    }
+
+    .food-menu_name-price ul li, .bar-menu_name-price ul li{
+        font-size: 3rem; 
+    }
+
+    .bg-salad{
+        width: 200px;
+        height: 300px;
+    }
+
+    .bg-second-meal{
+        width: 200px;
+        height: 150px;
+        /* top: 30%; */
+    }
+
+    .bg-pizza{
+        width: 250px;
+        height: 250px;
+    }
+
+    .bg-dessert{
+        width: 270px;
+        height: 290px;
+    }
+
+    .bg-tea{
+        width: 250px;
+        height: 250px;
+    }
+
+    #myBtn {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
